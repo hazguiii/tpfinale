@@ -1,0 +1,117 @@
+:root{
+    --background-color:rgb(16,66,122);
+    --button-background-color:rgb(6,169,241);
+    --font-color:rgb(230,230,230);
+    --soft-pink:rgb(252,208,214);
+    --background-content-color:rgb(245,187,0)
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    background-image: url('./main.png');
+    background-color: grey;
+}
+.go-back{
+    background-color: var(--background-content-color);
+    width: fit-content;
+    padding:10px;
+    top: 10%;
+    left: 5%;
+    border-radius: 50%;
+    position: fixed;
+}
+.log-in-content{
+    margin:3% 35% ;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 50px;
+    background-color: var(--background-content-color) ;
+    }
+.sign-in-title label{
+    font-size: 5em;
+    text-transform: uppercase;
+    color: yellowgreen;
+
+}
+.sign-in-title{
+    padding-top:15% ;
+
+}
+.username,.password,.submit-button{
+    margin-top: 5%;
+    padding: 0 25%;
+}
+.username input, .password input{
+    background: yellowgreen;
+    border-radius: 20px;
+    border: 2px solid yellowgreen;
+    width: 100%;
+    text-align: center;
+    padding:10px 0px;
+    color: white;
+}
+.submit-button{
+    margin: 5% 5%;
+    padding-bottom: 10%;
+}
+.submit-button button{
+    width: 100%;
+    text-align: center;
+    padding:10px 0px;
+    font-size: 1.6em;
+    text-align: center;
+    background: yellowgreen;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.password input:focus,.username input:focus{
+    outline: none;
+    transition-property: border-radius,border;
+    transition-duration: 0.5s;
+    border-radius: 3px;
+    border: white 2px solid;
+    
+}
+
+.password input:focus::placeholder, .username input:focus::placeholder{
+    color:transparent;
+}
+
+.log-in-page{
+    margin-top: 10%;
+}
+
+.incorrect{
+    margin: 5% 30% 0 30%;
+    background: black;
+    border-radius: 5%;
+    display: flex;
+    height: 270px;
+
+}
+.incorrect-image img{
+    height: 100%;
+
+}
+.incorrect-label  {
+    padding-top: 45%;
+    padding-right: 50px;
+    text-align: center;
+
+
+}
+.incorrect-label label{
+    color: white;
+
+}
+
